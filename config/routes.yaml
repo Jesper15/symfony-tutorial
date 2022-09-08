@@ -1,3 +1,7 @@
 controllers:
     resource: ../src/Controller/
     type: attribute
+
+#lucky_number_controller:
+#    path: /lucky/number
+#    controller: App\Controller\LuckyController::number

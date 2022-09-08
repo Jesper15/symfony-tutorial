@@ -1,0 +1,17 @@
+<h1>{{ title }}</h1>
+
+{# This is a comment #}
+
+<div>
+{#    <p>TODO: Create albums</p>#}
+
+    <ul>
+        {% for track in tracks %}
+            <li>
+                {{ track.song }} - {{ track.artist }}
+            </li>
+        {% endfor %}
+
+        {% set language = 'PHP' %}
+    </ul>
+</div>

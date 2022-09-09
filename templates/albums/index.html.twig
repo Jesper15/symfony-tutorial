@@ -1,17 +1,21 @@
-<h1>{{ title }}</h1>
+{% extends 'base.html.twig' %}
 
-{# This is a comment #}
+{% block title %}Add a new song | {{ parent() }}{% endblock %}
+
+{% block body %}
+<h1>{{ title }}</h1>
 
 <div>
 {#    <p>TODO: Create albums</p>#}
 
     <ul>
         {% for track in tracks %}
-            <li>
+            <table>
                 {{ track.song }} - {{ track.artist }}
-            </li>
+            </table>
         {% endfor %}
 
-        {% set language = 'PHP' %}
+        {{ "Tracks" | upper }}
     </ul>
 </div>
+{% endblock %}
